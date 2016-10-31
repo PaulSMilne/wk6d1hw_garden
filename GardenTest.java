@@ -3,10 +3,10 @@ import org.junit.*;
 
 class GardenTest{
     Garden garden;
-    Plant lettuce;
-    Plant broccoli;
-    Plant beans;
-    Plant daisy;
-    Plant marigold;
-    Plant peony;
+    Plant plant;
+
+    @Before
+    public void before() {
+        garden = new Garden("allotment", 2);
+    }
 }
