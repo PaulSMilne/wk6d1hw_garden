@@ -1,4 +1,4 @@
-class Plant {
+public class Plant {
 
     private String name;
 
@@ -6,4 +6,7 @@ class Plant {
         this.name = name;
     }
 
+    public String getName(){
+        return this.name;
+    }
 }
