@@ -23,10 +23,17 @@ public class GardenTest{
         plant7 = new Plant("Foxglove");
     }
 
-    @Test public void hasName(){
+    @Test 
+    public void hasName(){
         assertEquals("allotment", garden.getName());
         assertEquals("Lettuce", plant1.getName());
         assertEquals("Courgette", plant2.getName());
+    }
+
+    @Test
+    public void gardenBedsStartEmpty(){
+        assertEquals(0, garden.vegCount());
+        assertEquals(0, garden.flowerCount());
     }
 
 }

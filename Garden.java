@@ -15,21 +15,24 @@ public class Garden {
         return this.name;
     }
 
-    pub int vegCount(){
+    public int vegCount(){
         int counter = 0;
         for (Plant seedlings : vegBed){
             if (seedlings != null) {
-                counter++
+                counter++;
             }
         }
+    return counter;
     }
 
-pub int flowerCount(){
-    int counter = 0;
-    for (Plant seedlings : flowerBed){
-        if (seedlings != null) {
-            counter++
+    public int flowerCount(){
+        int counter = 0;
+        for (Plant seedlings : flowerBed){
+            if (seedlings != null) {
+                counter++;
+            }
         }
+    return counter;
     }
-}
+
 }
