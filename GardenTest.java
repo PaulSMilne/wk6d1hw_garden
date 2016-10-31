@@ -42,6 +42,12 @@ public class GardenTest{
         assertEquals(1, garden.vegCount());
     }
 
+    @Test
+    public void canPlantFlowers(){
+        garden.flowersPlant(plant5);
+        assertEquals(1, garden.flowerCount());
+    }
+
 
 
 }
