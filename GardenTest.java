@@ -48,6 +48,22 @@ public class GardenTest{
         assertEquals(1, garden.flowerCount());
     }
 
+    @Test
+    public void cantPlantMoreVegThanBedWillHold(){
+        for (int i = 0; i <=5; i++) {
+            garden.vegPlant(plant1);
+        }
+        assertEquals(4, garden.vegCount());
+    }
+
+    @Test
+    public void cantPlantMoreFlowersThanBedWillHold(){
+        for (int i = 0; i <=5; i++) {
+            garden.flowersPlant(plant5);
+        }
+        assertEquals(3, garden.flowerCount());
+    }
+
 
 
 }
