@@ -35,4 +35,8 @@ public class Garden {
     return counter;
     }
 
+    public void vegPlant(){
+        
+    }
+
 }
