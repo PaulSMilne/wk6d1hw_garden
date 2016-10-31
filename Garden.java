@@ -35,8 +35,16 @@ public class Garden {
     return counter;
     }
 
-    public void vegPlant(){
-        
+    public void vegPlant(Plant veg){
+        if (vegBedFull()){
+            return;
+        }
+        int seedlings = vegCount();
+        vegBed[seedlings] = veg;
+    }
+
+    public boolean vegBedFull(){
+        return vegCount == vegBed.length;
     }
 
 }
