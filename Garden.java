@@ -44,7 +44,7 @@ public class Garden {
     }
 
     public boolean vegBedFull(){
-        return vegCount == vegBed.length;
+        return vegCount() == vegBed.length;
     }
 
 }
