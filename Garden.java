@@ -59,4 +59,12 @@ public class Garden {
         return flowerCount() == flowerBed.length;
     }
 
+    // public String listVeg(){
+    //     System.out.println("The following plants are in the vegetable bed - ");
+    //     for (int i=0; i < vegBed.length; i++){
+    //         System.out.println(vegBed[0].getName);
+    //     }
+    // }
+
+
 }
