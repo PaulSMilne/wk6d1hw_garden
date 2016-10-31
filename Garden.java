@@ -13,4 +13,8 @@ class Garden {
 
     }
 
+    public String getName(){
+        return this.name;
+    }
+
 }
