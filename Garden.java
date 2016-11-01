@@ -13,9 +13,9 @@ public class Garden {
         return this.name;
     }
 
-    // public int plantCount(){
-    //     return this.bed.size;
-    // }
+    public int plantCount(){
+        return this.bed.size();
+    }
 
     // public void vegPlant(Plant veg){
     //     if (vegBedFull()){

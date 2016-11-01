@@ -1,3 +1,3 @@
-public interface Plantable(){
+public interface Plantable {
      String grow();
 }

@@ -1,4 +1,4 @@
-public class Flower Plantable {
+public class Flower implements Plantable {
 
     private String name;
 
@@ -11,6 +11,6 @@ public class Flower Plantable {
     }
 
     public String grow() {
-     return "Flowers blossom."
+     return "Flowers blossom.";
     }
 }

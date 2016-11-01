@@ -20,11 +20,10 @@ public class GardenTest{
         assertEquals("marigold", flower.getName());
     }
 
-    // @Test
-    // public void gardenBedsStartEmpty(){
-    //     assertEquals(0, garden.vegCount());
-    //     assertEquals(0, garden.flowerCount());
-    // }
+    @Test
+    public void gardenBedStartsEmpty(){
+        assertEquals(0, garden.plantCount());
+    }
 
     // @Test
     // public void canPlantVeg(){
