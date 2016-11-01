@@ -48,4 +48,11 @@ public class GardenTest{
     //     assertNotNull(plant);
     // }
 
+    @Test
+    public void canGetVegBack(){
+        garden.grow(veg);
+        Plantable plant = garden.pull();
+        Veg original = (Veg) plant;
+        assertEquals("Veg swells.", original.grow());
+    }
 }
