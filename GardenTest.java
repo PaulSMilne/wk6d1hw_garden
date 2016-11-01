@@ -72,6 +72,10 @@ public class GardenTest{
         garden.vegPlant(plant4);
     }
 
+    @Test
+    public void canListVeg(){
+        assertEquals("The following plants are in the vegetable bed - ", garden.vegList());
+    }
 
 
 }
