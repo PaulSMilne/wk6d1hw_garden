@@ -1,63 +1,45 @@
+import java.util.*;
+
 public class Garden {
     private String name;
-    private int size; //size refers to number of beds in the garden
-    private Plant[] vegBed;
-    private Plant[] flowerBed;
+    private ArrayList<Plantable> bed;
 
-    public Garden(String name, int size){
+    public Garden(String name){
         this.name = name;
-        this.size = size;
-        this.vegBed = new Plant[4];
-        this.flowerBed = new Plant[3];
+        this.bed = new ArrayList<Plantable>();
     }
 
     public String getName(){
         return this.name;
     }
 
-    public int vegCount(){
-        int counter = 0;
-        for (Plant seedlings : vegBed){
-            if (seedlings != null) {
-                counter++;
-            }
-        }
-    return counter;
-    }
+    // public int plantCount(){
+    //     return this.bed.size;
+    // }
 
-    public int flowerCount(){
-        int counter = 0;
-        for (Plant seedlings : flowerBed){
-            if (seedlings != null) {
-                counter++;
-            }
-        }
-    return counter;
-    }
+    // public void vegPlant(Plant veg){
+    //     if (vegBedFull()){
+    //         return;
+    //     }
+    //     int seedlings = vegCount();
+    //     vegBed[seedlings] = veg;
+    // }
 
-    public void vegPlant(Plant veg){
-        if (vegBedFull()){
-            return;
-        }
-        int seedlings = vegCount();
-        vegBed[seedlings] = veg;
-    }
+    // public boolean vegBedFull(){
+    //     return vegCount() == vegBed.length;
+    // }
 
-    public boolean vegBedFull(){
-        return vegCount() == vegBed.length;
-    }
+    // public void flowersPlant(Plant flower){
+    //     if (flowerBedFull()){
+    //         return;
+    //     }
+    //     int seedlings = flowerCount();
+    //     flowerBed[seedlings] = flower;
+    // }
 
-    public void flowersPlant(Plant flower){
-        if (flowerBedFull()){
-            return;
-        }
-        int seedlings = flowerCount();
-        flowerBed[seedlings] = flower;
-    }
-
-    public boolean flowerBedFull(){
-        return flowerCount() == flowerBed.length;
-    }
+    // public boolean flowerBedFull(){
+    //     return flowerCount() == flowerBed.length;
+    // }
 
     // public String listVeg(){
     //     string = System.out.println("The following plants are in the vegetable bed - ");
