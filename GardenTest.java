@@ -25,17 +25,13 @@ public class GardenTest{
         assertEquals(0, garden.plantCount());
     }
 
-    // @Test
-    // public void canPlantVeg(){
-    //     garden.vegPlant(plant1);
-    //     assertEquals(1, garden.vegCount());
-    // }
+    @Test
+    public void canPlantPlants(){
+        garden.grow(veg);
+        garden.grow(flower);
+        assertEquals(2, garden.plantCount());
+    }
 
-    // @Test
-    // public void canPlantFlowers(){
-    //     garden.flowersPlant(plant5);
-    //     assertEquals(1, garden.flowerCount());
-    // }
 
     // @Test
     // public void cantPlantMoreVegThanBedWillHold(){

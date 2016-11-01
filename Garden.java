@@ -17,13 +17,9 @@ public class Garden {
         return this.bed.size();
     }
 
-    // public void vegPlant(Plant veg){
-    //     if (vegBedFull()){
-    //         return;
-    //     }
-    //     int seedlings = vegCount();
-    //     vegBed[seedlings] = veg;
-    // }
+    public void grow(Plantable seedling){
+        this.bed.add(seedling);
+    }
 
     // public boolean vegBedFull(){
     //     return vegCount() == vegBed.length;
