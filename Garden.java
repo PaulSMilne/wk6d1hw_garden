@@ -21,6 +21,10 @@ public class Garden {
         this.bed.add(seedling);
     }
 
+    public void harvest(){
+        this.bed.clear();
+    }
+
     // public boolean vegBedFull(){
     //     return vegCount() == vegBed.length;
     // }

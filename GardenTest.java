@@ -32,6 +32,14 @@ public class GardenTest{
         assertEquals(2, garden.plantCount());
     }
 
+    @Test
+    public void canClearBeds(){
+        garden.grow(veg);
+        garden.grow(flower);
+        garden.harvest();
+        assertEquals(0, garden.plantCount());
+    }
+
 
     // @Test
     // public void cantPlantMoreVegThanBedWillHold(){
