@@ -1,4 +1,5 @@
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import org.junit.*;
 
 public class GardenTest{
@@ -40,35 +41,11 @@ public class GardenTest{
         assertEquals(0, garden.plantCount());
     }
 
-
     // @Test
-    // public void cantPlantMoreVegThanBedWillHold(){
-    //     for (int i = 0; i <=5; i++) {
-    //         garden.vegPlant(plant1);
-    //     }
-    //     assertEquals(4, garden.vegCount());
+    // public void canPullPlant(){
+    //     garden.grow(veg);
+    //     Plantable plant = garden.pull();
+    //     assertNotNull(plant);
     // }
-
-    // @Test
-    // public void cantPlantMoreFlowersThanBedWillHold(){
-    //     for (int i = 0; i <=5; i++) {
-    //         garden.flowersPlant(plant5);
-    //     }
-    //     assertEquals(3, garden.flowerCount());
-    // }
-
-    // @Test
-    // public void canPlantUpVegBed(){
-    //     garden.vegPlant(plant1);
-    //     garden.vegPlant(plant2);
-    //     garden.vegPlant(plant3);
-    //     garden.vegPlant(plant4);
-    // }
-
-    // @Test
-    // public void canListVeg(){
-    //     assertEquals("The following plants are in the vegetable bed - ", garden.vegList());
-    // }
-
 
 }

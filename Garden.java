@@ -25,29 +25,12 @@ public class Garden {
         this.bed.clear();
     }
 
-    // public boolean vegBedFull(){
-    //     return vegCount() == vegBed.length;
-    // }
-
-    // public void flowersPlant(Plant flower){
-    //     if (flowerBedFull()){
-    //         return;
-    //     }
-    //     int seedlings = flowerCount();
-    //     flowerBed[seedlings] = flower;
-    // }
-
-    // public boolean flowerBedFull(){
-    //     return flowerCount() == flowerBed.length;
-    // }
-
-    // public String listVeg(){
-    //     string = System.out.println("The following plants are in the vegetable bed - ");
-    //     // for (int i=0; i < vegBed.length; i++){
-    //     //     System.out.println(vegBed[0].getName);
-    //     // }
-    //     return string;
-    // }
-
+    public Plantable pull(){
+        if (plantCount() < 0){ 
+            Plantable plant = bed.remove(0);
+            return plant;
+        }
+        return null;
+    }
 
 }
