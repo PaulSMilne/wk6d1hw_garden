@@ -26,7 +26,7 @@ public class Garden {
     }
 
     public Plantable pull(){
-        if (plantCount() < 0){ 
+        if (plantCount() > 0){ 
             Plantable plant = bed.remove(0);
             return plant;
         }

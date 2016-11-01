@@ -41,14 +41,14 @@ public class GardenTest{
         assertEquals(0, garden.plantCount());
     }
 
-    // @Test
-    // public void canPullPlant(){
-    //     garden.grow(veg);
-    //     Plantable plant = garden.pull();
-    //     assertNotNull(plant);
-    // }
+    @Test 
+    public void canPullPlant(){
+        garden.grow(veg);
+        Plantable plant = garden.pull();
+        assertNotNull(plant);
+    }
 
-    @Test
+    @Test 
     public void canGetVegBack(){
         garden.grow(veg);
         Plantable plant = garden.pull();
